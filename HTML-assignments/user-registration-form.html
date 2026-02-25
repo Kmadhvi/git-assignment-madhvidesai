@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>Assignment 3</title>
+</head>
+
+<body>
+    <form action="submit.html" method="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <div>
+                    <label>Full Name:</label>
+                </div>
+                <div>
+                    <input type="text" id="name" name="name" placeholder="FirstName LastName" required /><br><br>
+                </div>
+                <div>
+                    <label>About Yourself:</label>
+                </div>
+                <div>
+                    <textarea id="about" name="about" cols="50" rows="5"
+                        placeholder="Tell us about yourself"></textarea><br><br>
+                </div>
+                <div>
+                    <label>Email Address:</label>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required /><br><br>
+                </div>
+                <div>
+                    <label>Password:</label>
+                </div>
+                <div>
+                    <input type="password" id="password" minlength="8" placeholder="Password" required /><br><br>
+                </div>
+                <div>
+                    <label>Phone Number:</label>
+                </div>
+                <div>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required /><br><br>
+                </div>
+                <div>
+                    <label>Website:</label>
+                </div>
+                <div>
+                    <input type="url" id="website" name="website" placeholder="Website URL"><br><br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+                <legend>Skills & Preferences</legend>
+                <div>
+                    <div>
+                        <label>Skills:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="html" name="skills" value="HTML" checked>
+                        <label for="html"> HTML</label><br>
+                        <input type="checkbox" id="css" name="skills" value="CSS">
+                        <label for="css"> CSS</label><br>
+                        <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+                        <label for="javascript"> JavaScript</label><br><br>
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male"> Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female" checked>
+                        <label for="female"> Female</label><br><br>
+                    </div>
+                    <div>
+                        <label>Preferred Color:</label>
+                    </div>
+                    <div>
+                        <input type="color" id="color" name="color" value="#FFFFFF"><br><br>
+                    </div>
+                    <div>
+                        <label>Experience level:</label>
+                    </div>
+                    <div>
+                        <select name="experience_level" id="experience_level">
+                            <option value="0">0</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                        </select><br><br>
+                    </div>
+                    <div>
+                        <label>Search Interest:</label>
+                    </div>
+                    <div>
+                        <input type="search" id="interest" name="interest" placeholder="Search Interest"><br><br>
+                    </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date & Time</legend>
+            <div>
+                <label>Date of Birth:</label>
+            </div>
+            <div>
+                <input type="date" id="birth_date" name="birth_date" min="2000-01-01" max="2005-12-31"><br><br>
+            </div>
+            <div>
+                <label>Available Time:</label>
+            </div>
+            <div>
+                <input type="time" id="available_time" name="available_time" min="09:00" max="17:00"><br><br>
+            </div>
+            <div>
+                <label>Joining Month:</label>
+            </div>
+            <div>
+                <input type="month" id="joining_month" name="joining_month" value="2026-01" min="2023-01" max="2026-12"><br><br>
+            </div>
+            <div>
+                <label>Training Week</label>
+            </div>
+            <div>
+                <input type="week" id="training_week" name="training_week" value="2026-W07" min="2023-W01" max="2026-W52" disabled><br><br>
+            </div>
+            <div>
+                <label>Interview Slot</label>
+            </div>
+            <div>
+                <input type="datetime-local" id="interview_slot" name="interview_slot" value="2026-01-15T10:00" min="2023-01-01T09:00" max="2026-12-31T17:00"><br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>File Upload</legend>
+            <div>
+                <div>
+                    <label>Technology:</label>
+                </div>
+                <div>
+                    <select name="technology" id="technology">
+                        <option value=".Net">.Net</option>
+                        <option value="angular">Angular</option>
+                        <option value="java">Java</option>
+                        <option value="Reactjs">Reactjs</option>
+                        <option value="QA">QA</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label>Upload Resume:</label>
+                </div>
+                <div>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+                </div>
+                <div>
+                    <input type="hidden" name="user_id" value="101">
+                </div>
+            </div>
+
+        </fieldset>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="button" value="Cancel" >
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+</body>
+
+</html>
