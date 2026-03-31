@@ -1,4 +1,7 @@
-// 1. Student Report System
+/*  ==========================================
+   1. Student Report System
+ =============================================*/
+
 
 let students = [
   { name: "Hiya", marks: [80, 70, 90] },
